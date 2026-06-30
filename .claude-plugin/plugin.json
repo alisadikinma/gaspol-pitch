@@ -1,0 +1,24 @@
+{
+  "name": "gaspol-pitch",
+  "description": "Orchestrates investor/accelerator pitch-deck creation: discovery -> narrative -> draft -> adversarial investor review -> visual -> finish. Reuses installed marketing skills as the engine; the differentiator is a rubric-driven skeptic-investor linter that scores and blocks a weak deck before you send it. Outputs a Marp markdown deck + one nano-banana-pro image prompt per slide (MCP-optional).",
+  "version": "0.1.0",
+  "author": {
+    "name": "Ali Sadikin",
+    "url": "https://github.com/alisadikinma"
+  },
+  "homepage": "https://github.com/alisadikinma/gaspol-pitch",
+  "repository": "https://github.com/alisadikinma/gaspol-pitch",
+  "license": "MIT",
+  "keywords": [
+    "pitch-deck",
+    "investor",
+    "fundraising",
+    "accelerator",
+    "venture-capital",
+    "business-model",
+    "unit-economics",
+    "hormozi",
+    "adversarial-review",
+    "claude-code"
+  ]
+}

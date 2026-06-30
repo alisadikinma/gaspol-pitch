@@ -1,0 +1,6 @@
+.DS_Store
+*.pdf
+*.pptx
+*.png
+.gaspol/
+graphify-out/
