@@ -94,11 +94,17 @@ pitch-finish. Do not soften a verdict to be polite — that defeats the plugin.
 
 ## Self-test (this skill's correctness contract)
 
-- `../../references/examples/bad-deck.md` MUST be caught failing: **Linguistic-Fluff**
-  ("world-class", "synergy", "best-in-class", "cutting-edge", "revolutionize",
-  "paradigm-shifting"), **Assertion-vs-Topic** ("Market Size", "Traction", "The Ask"),
-  **One-Message** (slide 3's triple "and"), **Data-Parsing** ("four million"),
-  top-down **TAM**, and the **Ask** fail ("raising $2M to grow"). Verdict = BLOCKING.
+- `../../references/examples/bad-deck.md` MUST be caught failing — with the layer that
+  catches each (the multi-layer review is what makes this robust):
+  - **Linguistic-Fluff** ("world-class", "synergy", "best-in-class", "cutting-edge",
+    "revolutionize", "paradigm-shifting") → layer (a) binary PART-C.
+  - **Assertion-vs-Topic** ("Market Size", "Traction", "The Ask" are labels) → layer (a) binary PART-C.
+  - **One-Message** (slide 3's triple "and") → layer (a) binary PART-C.
+  - **Data-Parsing** ("four million" not "4M") → layer (a) binary PART-C.
+  - **Top-down TAM** (no bottom-up build) → layer (c) signals (PART-B Market), NOT binary.
+  - **Ask fail** ("raising $2M to grow" — no split/milestone) → layer (c) signals (PART-B Ask).
+    (Its label-headline "The Ask" is *also* caught by Assertion-vs-Topic in layer (a).)
+  Verdict = BLOCKING.
 - `../../references/examples/good-deck.md` (Acme) MUST PASS: assertion headlines,
   bottom-up TAM ($4B = 888 × $4,800), 3.6× LTV:CAC / 7-mo payback, exact ask with
   use-of-funds split. Verdict = PASS.

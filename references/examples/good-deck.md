@@ -38,11 +38,11 @@ Edge inference that needed a server now runs on a $400 phone.
 
 ---
 
-# Market is a $4B bottom-up opportunity
+# Market is a $1.2B bottom-up opportunity
 
-888 reachable factories × $4,800 average annual contract = $4.3B serviceable.
+250,000 reachable factories × $4,800 average annual contract = $1.2B serviceable.
 
-<!-- notes: Bottom-up (segment × ACV), not top-down trillions. -->
+<!-- notes: Bottom-up (segment × ACV), not top-down trillions. 250,000 × $4,800 = $1.2B. -->
 
 ---
 
@@ -54,11 +54,13 @@ Edge inference that needed a server now runs on a $400 phone.
 
 ---
 
-# Unit economics already work: 3.6× LTV:CAC, 7-month payback
+# Unit economics already work: 3.6× LTV:CAC, 4-month payback
 
 $4,800 ACV, 82% gross margin, $1,330 blended CAC.
 
-<!-- notes: Clears hard thresholds; COGS acknowledged in margin. -->
+<!-- notes: Payback = $1,330 ÷ ($4,800 × 82% ÷ 12) = 4.1 months. Clears hard
+     thresholds; COGS in margin. LTV:CAC stated conservatively — at 128% NRR the
+     real LTV is higher. -->
 
 ---
 

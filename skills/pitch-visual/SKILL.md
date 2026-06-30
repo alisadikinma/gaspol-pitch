@@ -17,8 +17,8 @@ description: Fifth phase of gaspol-pitch, run only after pitch-review PASSES. Us
 ## Reuses (installed — call, don't recreate)
 
 - **carousel-gen** (`ai-image-carousel-prompt-gen`) — the SSOT prompt machinery ("author prompt, consumer fulfills").
-- **gaspol-design** — palette / font / chart choice for the slide.
-- Reads `../../references/deck-design.md` (slide archetype + 5-section template + theming canon + variant taxonomy + functional-render-pass spec).
+- **gaspol-design** *(optional)* — palette / font / chart choice for the slide. If it isn't installed, do NOT hard-stop: fall back to the theming canon (palette pairs, type scale, chart-choice) already in `../../references/deck-design.md`, which is self-sufficient for this. Note the fallback in the run output.
+- Reads `../../references/deck-design.md` (slide archetype + 5-section template + theming canon + variant taxonomy + functional-render-pass spec) — the authoritative source; `gaspol-design` only enriches it.
 
 ## Step 1 — author a prompt per slide
 

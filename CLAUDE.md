@@ -19,11 +19,15 @@ same rule as the global image/video SSOT pattern.
 | `pitch-narrative` | storybrand, made-to-stick, influence | `deck-narrative.md`, `hormozi-offer.md` |
 | `pitch-draft` | obviously-awesome, 100m-offers, monetizing-innovation, traction, blue-ocean-strategy | `business-model.md`, `unit-economics.md`, `investor-deck-rubric.md` |
 | `pitch-review` | (none — this is the new logic) | `investor-deck-rubric.md`, `vc-review-rubric.md`, `unit-economics.md`, `vc-fundamentals.md` |
-| `pitch-visual` | carousel-gen (`ai-image-carousel-prompt-gen`), gaspol-design | `deck-design.md` |
-| `pitch-finish` | gaspol-knowledge, obsidian | — |
+| `pitch-visual` | carousel-gen (`ai-image-carousel-prompt-gen`), gaspol-design *(optional)* | `deck-design.md` |
+| `pitch-finish` | gaspol-knowledge *(optional)*, obsidian | — |
 
-If an installed skill named above is **missing** at runtime, STOP and tell the
+If a **required** installed skill above is missing at runtime, STOP and tell the
 user — do NOT stub it or fabricate a replacement.
+
+**Optional dependencies (graceful degrade, never hard-stop):**
+- `gaspol-design` (palette/font/chart for slides) — if absent, `pitch-visual` falls back to the theming canon in `deck-design.md`, which is self-sufficient.
+- `gaspol-knowledge` (the gaspol-dev cross-project KB skill) — if absent, `pitch-finish` skips the KB write-back and just notes it; the vault `hot.md` line via `obsidian` still happens.
 
 ## references/ index (the brain — GENERIC only)
 

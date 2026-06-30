@@ -2,9 +2,11 @@
 
 > Brain for `pitch-visual`. Generic principles only — **no specific brand**
 > (no fixed hex, @handle, named portrait style). Brand chrome is a RUNTIME input
-> the user supplies; this file never bakes one. Theming canon adopted from public
-> presentation-design guidance (Anthropic pptx "Design Ideas" + McKinsey-style
-> chart-discipline), summarized.
+> the user supplies; this file never bakes one. Theming canon distilled from
+> established public presentation-design literature (Nancy Duarte's *slide:ology*,
+> Robin Williams' *The Non-Designer's Design Book*, and standard data-viz
+> chart-choice guidance), summarized. These are industry-wide principles, not any
+> one proprietary source.
 
 ## Render policy
 
