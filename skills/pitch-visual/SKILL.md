@@ -41,8 +41,9 @@ runtime placeholder — never bake a specific logo/hex/font/handle.**
 
 ## Step 2 — MCP-optional fulfillment
 
-Detect an image MCP (`indusia-image-gen` or `higgsfield`; confirm a nano-banana-pro
-model id via `list_image_models` / `models_explore`).
+Detect any image-gen MCP that exposes a nano-banana-pro model (e.g. `higgsfield`,
+or whatever image MCP the user has configured); confirm the model id via the
+server's `list_image_models` / `models_explore` tool.
 
 - **MCP present** → generate `slide-NN.png` for each prompt, then run the
   **functional render-pass**: a fresh subagent inspects each PNG with "assume there
