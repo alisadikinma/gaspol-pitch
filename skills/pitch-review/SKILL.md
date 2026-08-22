@@ -16,12 +16,31 @@ description: The differentiator phase of gaspol-pitch. Use to adversarially revi
 `deck.md` (from pitch-draft, OR a deck the user brings) + `discovery.md` (for the
 target profile + stage, if present).
 
+**Optional — `rubric`:** one or more paths to rubric files supplied by the caller.
+When present, load those INSTEAD of the default brain below and score against them,
+keeping this skill's machinery unchanged: the same layers, the same blocking verdict,
+the same refusal to soften. When absent, behaviour is **identical** to before this
+parameter existed — the four defaults below are loaded and nothing else changes.
+
+This exists so a sibling plugin can reuse the review engine with its own audience's
+rubric instead of copying the engine. A copied rubric is how two standards silently
+drift apart.
+
 ## Load (the brain)
+
+Defaults — used whenever no `rubric` is supplied:
 
 - `../../references/investor-deck-rubric.md` — binary checks (PART B/C/D).
 - `../../references/vc-review-rubric.md` — scored judgment (/55 + ABC + conviction + consistency + earned-secret + narrative gates).
 - `../../references/unit-economics.md` — hard thresholds.
 - `../../references/vc-fundamentals.md` — DD checklist + objection list.
+
+With a caller-supplied `rubric`, those four are NOT loaded; the supplied files carry
+the binary checks, the scored dimensions, the thresholds, and the objection list, and
+each layer of the Procedure reads them in the same order. Where a supplied rubric has
+no equivalent for a layer (an audience with no unit-economics gate, say), report that
+layer as `N/A — no rubric section` rather than falling back to the investor default.
+Mixing two audiences' rubrics in one report is worse than a missing layer.
 
 ## Procedure (run all layers, in order)
 
