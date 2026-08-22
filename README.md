@@ -6,6 +6,16 @@
 > feature is an **adversarial investor-review linter** that scores the deck like
 > a skeptical VC and *blocks* it from finishing until it passes.
 
+## Install
+
+```bash
+claude plugin marketplace add alisadikinma/gaspol-one
+claude plugin install gaspol-pitch@gaspol-one
+```
+
+The [gaspol-one](https://github.com/alisadikinma/gaspol-one) marketplace also carries
+`gaspol-dev` (execution fidelity) and `gaspol-catalog` (B2B sales decks).
+
 ## What it does
 
 A multi-skill orchestrator. You give it your company facts (and optionally a
