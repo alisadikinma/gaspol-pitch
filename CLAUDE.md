@@ -55,8 +55,3 @@ user — do NOT stub it or fabricate a replacement.
 `skills/<name>/SKILL.md`: a `---` fenced YAML frontmatter (`name`, `description`)
 then a markdown body. Description should carry the trigger phrases that route to
 the skill.
-
-## gaspol Ticket Counter
-
-Prefix: CAT
-Last ticket: CAT-1
